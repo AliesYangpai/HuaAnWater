@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/img_bg"
+android:orientation="vertical"
+tools:context="org.huaanwater.work.ui.activity.UserInfoActivity">
+
+
+<!--title-->
+
+<include
+    android:id="@+id/include_title_login"
+    layout="@layout/title_bar_has_all_right_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_top_info"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/include_title_login"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/img_default_client_head_round"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="用户名："
+                    android:textColor="@color/qhy_blue"
+                    android:gravity="center_vertical|right"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="center_vertical"
+                    android:textColor="@color/qhy_blue"
+                    android:textSize="15sp"
+                    android:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="7dp"
+                >
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="电话："
+                    android:textColor="@color/qhy_blue"
+                    android:gravity="center_vertical|right"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="center_vertical"
+                    android:textColor="@color/qhy_blue"
+                    android:textSize="15sp"
+                    android:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_arrow"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <View
+        android:id="@+id/view_line_divide"
+        android:layout_below="@id/ll_top_info"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@drawable/img_login_divide"
+        />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_top_info"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            >
+            <!--余额-->
+            <LinearLayout
+                android:id="@+id/rl_balance"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+
+                <TextView
+                    android:id="@+id/tv_text_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/qhy_blue"
+                    android:text="余额："
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_balance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/qhy_blue"
+                    android:text="0.0"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_balance_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="明细"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="@color/qhy_blue"
+
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+            <!--积分-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+
+                <TextView
+                    android:id="@+id/tv_text_user_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/qhy_blue"
+                    android:text="积分："
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_user_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/qhy_blue"
+                    android:text="0"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_user_point_detial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="明细"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="@color/qhy_blue"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+            <!--订单-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+
+                <TextView
+                    android:id="@+id/tv_text_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/qhy_blue"
+                    android:text="订单："
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_order_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/qhy_blue"
+                    android:text="0"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_order_count_detial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="明细"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="@color/qhy_blue"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/include_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/include_userinfo_bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+

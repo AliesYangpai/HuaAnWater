@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+
+        >
+
+
+        <TextView
+            android:id="@+id/tv_news_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textColor="@color/black_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textColor="@color/text_login"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            />
+
+
+        <WebView
+            android:id="@+id/wv_picAndDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            ></WebView>
+
+
+
+        <!--关键字-->
+        <LinearLayout
+            android:id="@+id/ll_keywords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/tv_key_words"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/qhy_blue"
+                android:text="key_words"
+
+                />
+
+        </LinearLayout>
+
+
+
+        <!--点赞数-->
+        <RelativeLayout
+            android:id="@+id/rl_like_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:visibility="gone"
+            >
+
+
+            <ImageView
+                android:id="@+id/iv_like"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/img_like_normal"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_like_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_login"
+                android:text="1233"
+                android:textSize="13sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_like"
+                />
+            <ImageView
+                android:id="@+id/iv_redirect_send"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/img_redirect_send"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

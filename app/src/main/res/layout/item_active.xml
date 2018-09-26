@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        >
+
+
+
+        <!--标题和描述-->
+        <TextView
+            android:id="@+id/tv_active_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="一分钟认识富氢水"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/qhy_blue"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/iv_first_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_all"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+</LinearLayout>

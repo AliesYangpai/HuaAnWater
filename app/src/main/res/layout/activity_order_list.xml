@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/img_bg"
+android:orientation="vertical"
+tools:context="org.huaanwater.work.ui.activity.order.OrderListActivity">
+
+
+
+<!--title-->
+
+<include
+    android:id="@+id/include_title_balance"
+    layout="@layout/title_bar_has_all"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/include_title_balance"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_top_info"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/order_count"
+                    android:textColor="@color/qhy_blue"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:id="@+id/tv_order_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textColor="@color/qhy_blue"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/view_line_divide"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@id/ll_top_info"
+            android:background="@drawable/img_login_divide" />
+
+
+        <RelativeLayout
+            android:id="@+id/ll_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_line_divide"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:id="@+id/iv_history_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/img_history"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+            <LinearLayout
+
+                android:id="@+id/ll_center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/qhy_blue"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/iv_history_icon"
+                />
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ll_center"
+                android:layout_marginTop="10dp"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

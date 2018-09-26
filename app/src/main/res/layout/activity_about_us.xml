@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/img_bg"
+android:orientation="vertical"
+tools:context="org.huaanwater.work.ui.activity.AboutUsActivity">
+
+
+<!--title-->
+
+<include
+    android:id="@+id/include_title_version"
+    layout="@layout/title_bar_has_left"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+
+
+<LinearLayout
+    android:id="@+id/ll_version_info_all"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_below="@id/include_title_version"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/ic_launcher"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/tv_about_us_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="clinet_v_1.0.0"
+        android:textColor="@color/qhy_blue"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+<View
+    android:id="@+id/view_line_divide"
+    android:layout_width="match_parent"
+    android:layout_height="15dp"
+    android:layout_below="@id/ll_version_info_all"
+    android:background="@drawable/img_login_divide" />
+
+
+<TextView
+    android:id="@+id/tv_about_us_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:layout_below="@id/view_line_divide"
+    android:text=" "
+    android:textColor="@color/qhy_blue"
+    android:textStyle="bold"
+    />
+
+
+</RelativeLayout>
+
+
+

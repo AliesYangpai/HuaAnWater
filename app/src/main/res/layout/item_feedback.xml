@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_weight="4"
+            >
+            <ImageView
+                android:id="@+id/iv_alert"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@color/add_to_shop_car"
+                />
+
+            <TextView
+                android:id="@+id/tv_feedback_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="界面偶偶尔拉开距离科技卡死"
+                android:textColor="@color/qhy_blue"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:gravity="right|center_vertical"
+            >
+            <TextView
+                android:id="@+id/tv_is_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已回复"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:textSize="13sp"
+                android:padding="5dp"
+                android:background="@drawable/boder_blue_bg"
+                />
+
+
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2017-11-24"
+                android:gravity="center"
+                android:textColor="@color/qhy_blue"
+                />
+
+            
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_all"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+    
+</LinearLayout>

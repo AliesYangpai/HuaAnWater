@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+
+        >
+
+
+        <!--左-->
+
+        <ImageView
+            android:id="@+id/iv_common_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/img_bar_left_logo"
+            android:layout_centerVertical="true"
+            />
+
+
+        <!--中-->
+        <TextView
+            android:id="@+id/tv_common_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="氢活益"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/qhy_blue"
+            android:visibility="gone"
+            />
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="12dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="3dp"
+                android:src="@drawable/selector_title_bar_main_right_bg"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/mine"
+                android:textColor="@color/qhy_blue"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/bg_all"
+        />
+
+
+</LinearLayout>

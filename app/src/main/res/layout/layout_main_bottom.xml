@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                >
+                <ImageView
+                    android:id="@+id/iv_goods"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:src="@drawable/selector_main_bottom_item" />
+                <TextView
+
+                    android:paddingTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"
+                    android:text="好货"
+                    android:layout_marginTop="27dp"
+
+                    />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                >
+                <ImageView
+                    android:id="@+id/iv_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:src="@drawable/selector_main_bottom_item" />
+                <TextView
+
+                    android:paddingTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"
+                    android:text="动态"
+                    android:layout_marginTop="27dp"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                >
+                <ImageView
+                    android:id="@+id/iv_balance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:src="@drawable/selector_main_bottom_item" />
+                <TextView
+
+                    android:paddingTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"
+                    android:text="余额"
+                    android:layout_marginTop="27dp"
+                    />
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                >
+                <ImageView
+                    android:id="@+id/iv_user_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:src="@drawable/selector_main_bottom_item" />
+                <TextView
+                    android:paddingTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="积分"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="27dp"
+                    />
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/ll_bottom"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="120dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:background="@color/white"-->
+        <!--&gt;-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_goods"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_weight="1"-->
+                <!--android:padding="10dp"-->
+                <!--android:src="@drawable/img_the_goods" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_active"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:src="@drawable/img_the_goods"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_weight="1"-->
+                <!--android:padding="10dp"-->
+                <!--/>-->
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_balance"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:src="@drawable/img_the_goods"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_weight="1"-->
+                <!--android:padding="10dp"-->
+                <!--/>-->
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_user_point"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:src="@drawable/img_the_goods"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_weight="1"-->
+                <!--android:padding="10dp"-->
+                <!--/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:background="@color/blue_one"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--&gt;-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="好货"-->
+                <!--android:textColor="@color/black_text"-->
+                <!--android:gravity="center"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="动态"-->
+                <!--android:textColor="@color/black_text"-->
+                <!--android:gravity="center"-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="余额"-->
+                <!--android:textColor="@color/black_text"-->
+                <!--android:gravity="center"-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="积分"-->
+                <!--android:textColor="@color/black_text"-->
+                <!--android:gravity="center"-->
+                <!--/>-->
+
+        <!--</LinearLayout>-->
+
+    <!--</RelativeLayout>-->
+
+
+</LinearLayout>

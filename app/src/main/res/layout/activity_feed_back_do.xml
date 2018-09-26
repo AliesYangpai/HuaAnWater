@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/img_bg"
+tools:context="org.huaanwater.work.ui.activity.feedback.FeedBackDoActivity">
+
+
+<!--title-->
+<include
+    android:id="@+id/include_title_feedback_activity"
+    layout="@layout/title_bar_has_left"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_feed_back_do"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@id/include_title_feedback_activity"
+        >
+
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp">
+
+            <ImageView
+                android:id="@+id/iv_reg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/selector_main_bottom_item" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="27dp"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="反馈"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view_line_divide"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/ll_feed_back_do"
+        android:background="@drawable/img_login_divide" />
+
+
+
+        
+    
+    <LinearLayout
+        android:id="@+id/ll_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/view_line_divide"
+        android:layout_marginTop="10dp"
+        >
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_account"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="50dp"
+            >
+
+
+            <EditText
+                android:id="@+id/et_feedback_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_feed_back_title"
+                android:singleLine="true"
+                android:textColor="@color/text_login"
+                android:textColorHint="@color/text_grays"
+                android:textSize="15sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/layout_account"
+                android:background="@color/blue_one" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/cv_content"
+            style="@style/CardView.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_line_divide"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:stateListAnimator="@drawable/lift_on_touch"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            tools:targetApi="lollipop"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_feedback_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/transparent"
+                    android:gravity="top"
+                    android:hint="@string/your_advice"
+                    android:lineSpacingExtra="3dp"
+                    android:textColor="@color/text_login"
+                    android:textColorHint="@color/text_grays"
+                    android:textSize="14sp" />
+
+
+
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/ll_edit"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="上传图片:"
+            android:textColor="@color/qhy_blue"
+            android:gravity="center"
+            android:textSize="16sp"
+            />
+        
+        <ImageView
+            android:id="@+id/iv_feed_1"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:src="@color/red"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_feed_2"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:src="@color/red"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_feed_3"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:src="@color/red"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_commit"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+        <ImageView
+            android:id="@+id/iv_commit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/selector_main_bottom_item" />
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:text="@string/sure"
+            android:layout_marginTop="27dp"
+            />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+

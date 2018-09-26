@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="2017-03-11 08:13:06"
+            android:layout_weight="1"
+            android:textColor="@color/black_text" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="送件中"
+                android:gravity="center_vertical"
+                android:textColor="@color/black_text"
+
+                />
+
+
+
+
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="365ml*6瓶"
+                android:gravity="center_vertical"
+                android:textColor="@color/black_text"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--style="@style/CardView.Light"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:foreground="?android:attr/selectableItemBackground"-->
+        <!--android:stateListAnimator="@drawable/lift_on_touch"-->
+        <!--app:cardCornerRadius="4dp"-->
+        <!--app:cardElevation="2dp"-->
+        <!--app:cardPreventCornerOverlap="false"-->
+        <!--app:cardUseCompatPadding="true"-->
+        <!--tools:targetApi="lollipop">-->
+
+        <!--<LinearLayout-->
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="vertical"-->
+            <!--android:padding="10dp"-->
+            <!--&gt;-->
+
+
+
+
+
+
+            <!--&lt;!&ndash;积分时间&ndash;&gt;-->
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="@string/user_point_time"-->
+                    <!--android:textColor="@color/text_login" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_time"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="2017-03-11 08:13:06"-->
+                    <!--android:textColor="@color/text_login" />-->
+
+            <!--</RelativeLayout>-->
+
+
+
+            <!--&lt;!&ndash;全部积分&ndash;&gt;-->
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="全部积分"-->
+                    <!--android:textColor="@color/text_login"-->
+                    <!--android:id="@+id/textView6" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_all_user_points"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="263"-->
+                    <!--android:textColor="@color/text_login"-->
+                    <!--android:layout_alignBaseline="@+id/textView6"-->
+                    <!--android:layout_alignBottom="@+id/textView6"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentEnd="true" />-->
+
+            <!--</RelativeLayout>-->
+
+
+
+            <!--&lt;!&ndash;本次积分&ndash;&gt;-->
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="本次积分"-->
+                    <!--android:textColor="@color/text_login" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_this_user_point"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="3"-->
+                    <!--android:textColor="@color/green_one"-->
+                    <!--android:textSize="25sp" />-->
+
+            <!--</RelativeLayout>-->
+
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.5dp"-->
+                <!--android:background="@color/bg_all"-->
+                <!--/>-->
+
+            <!--&lt;!&ndash;积分说明&ndash;&gt;-->
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--&gt;-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_flow_comment_text"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="流水说明"-->
+                    <!--android:textColor="@color/text_login" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_flow_comment"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_marginLeft="30dp"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="消费流入"-->
+
+                    <!--android:textColor="@color/green_one" />-->
+
+            <!--</RelativeLayout>-->
+
+
+        <!--</LinearLayout>-->
+
+
+    <!--</android.support.v7.widget.CardView>-->
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+android:orientation="vertical"
+tools:context="org.huaanwater.work.ui.activity.feedback.FeedBackInfoActivity">
+
+
+<!--title-->
+
+<include
+    android:id="@+id/include_title_feed_back_info"
+    layout="@layout/title_bar_has_left"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_feed_back_info"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@id/include_title_feed_back_info"
+        >
+
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp">
+
+            <ImageView
+                android:id="@+id/iv_reg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/selector_main_bottom_item" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="27dp"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="反馈"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view_line_divide"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/ll_feed_back_info"
+        android:background="@drawable/img_login_divide" />
+
+
+
+
+
+
+
+    <include
+        android:id="@+id/include_ll_comment"
+        layout="@layout/include_comment_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+
+
+
+
+
+
+    <ListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view_line_divide"
+        android:layout_above="@+id/include_ll_comment"
+        android:divider="@color/bg_all"
+        android:dividerHeight="0.3dp"
+
+
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+

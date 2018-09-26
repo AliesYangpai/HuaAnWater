@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_bg"
+    android:orientation="vertical"
+    tools:context="org.huaanwater.work.ui.activity.HelpActivity">
+
+
+    <!--title-->
+
+    <include
+        android:id="@+id/include_title_help"
+        layout="@layout/title_bar_has_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_help"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/include_title_help"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp">
+
+            <ImageView
+                android:id="@+id/iv_reg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/selector_main_bottom_item" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="27dp"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="帮助"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view_line_divide"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/ll_help"
+        android:background="@drawable/img_login_divide" />
+
+    <LinearLayout
+        android:id="@+id/ll_help1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_line_divide"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_all" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            >
+
+
+
+
+            <TextView
+                android:id="@+id/tv_help1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="1.扫码无反应，怎么办？"
+                android:textColor="@color/qhy_blue"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_arrow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/img_arrow_2" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_detial_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/twenzi"
+            android:textColor="@color/black_text"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_help2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_help1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        >
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_all" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            >
+
+
+
+            <TextView
+                android:id="@+id/tv_help2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="2.饮水机不出水怎么办？"
+                android:textColor="@color/qhy_blue"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_arrow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/img_arrow_2" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_detial_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/test_wenzi2"
+            android:textColor="@color/black_text"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_help3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_help2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_all" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            >
+
+
+
+
+            <TextView
+                android:id="@+id/tv_help3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="3.如何申请退款余额？"
+                android:textColor="@color/qhy_blue"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_arrow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/img_arrow_2" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_detial_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/test_wenzi2"
+            android:textColor="@color/black_text"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

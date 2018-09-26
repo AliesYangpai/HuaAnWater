@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/img_bg"
+android:orientation="vertical"
+tools:context="org.huaanwater.work.ui.activity.AuthAccountSelectActivity">
+
+
+<!--title-->
+
+<include
+    android:id="@+id/include_title_login"
+    layout="@layout/title_bar_has_left"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+
+
+<LinearLayout
+    android:id="@+id/ll_center"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_below="@id/include_title_login"
+    android:layout_marginTop="30dp"
+    >
+    <ImageView
+        android:id="@+id/iv_third_head"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/img_client_normal"
+        />
+
+    <TextView
+        android:id="@+id/tv_third_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/qhy_blue"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="..."
+        android:textSize="17sp"
+        />
+
+
+</LinearLayout>
+
+
+<View
+    android:id="@+id/view_line_divide"
+    android:layout_below="@id/ll_center"
+    android:layout_width="match_parent"
+    android:layout_height="15dp"
+    android:background="@drawable/img_login_divide"
+    android:layout_marginTop="30dp"
+    />
+
+
+
+
+
+<LinearLayout
+    android:id="@+id/ll_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="50dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/rl_reg"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            >
+            <ImageView
+                android:id="@+id/iv_has_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/selector_main_bottom_item" />
+            <TextView
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:text="已有账号"
+                android:layout_marginTop="27dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_login"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            >
+            <ImageView
+                android:id="@+id/iv_no_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/selector_main_bottom_item" />
+            <TextView
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:text="没有账号"
+                android:layout_marginTop="27dp"
+                />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/tv_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center"
+        android:text="注册"
+        android:textColor="@color/black_text"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        />
+
+
+
+
+</LinearLayout>
+
+
+
+</RelativeLayout>
+
+

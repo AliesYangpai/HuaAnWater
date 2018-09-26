@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+android:orientation="vertical"
+tools:context="org.huaanwater.work.ui.activity.commen.CommentInfoChildActivity">
+
+
+<!--title-->
+
+<include
+    android:id="@+id/include_title_comment_info"
+    layout="@layout/title_bar_has_left"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+<!--底部-->
+<include
+    android:id="@+id/include_ll_comment"
+    layout="@layout/include_comment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    />
+
+
+
+<!--中间-->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/include_title_comment_info"
+    android:layout_above="@id/include_ll_comment"
+    >
+
+
+
+    <include
+        android:id="@+id/include_comment_info"
+        layout="@layout/include_comment_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+    <View
+        android:id="@+id/view_line_devide"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/bg_all"
+        android:layout_below="@+id/include_comment_info"
+        />
+
+    <TextView
+        android:id="@+id/tv_all_reply"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="全部评论："
+        android:gravity="center_vertical"
+        android:textColor="@color/black_text"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/view_line_devide"
+        />
+
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_all_reply"
+        />
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+

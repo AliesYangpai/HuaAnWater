@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">氢活益</string>
+
+    <string name="permission_title">权限提醒</string>
+    <string name="permission_msg">您拒绝了我们必要的一些权限，将会导致应用某些功能无法使用，请在设置中授权！</string>
+    <string name="permission_cancel">取消</string>
+    <string name="permission_sure">前往设置</string>
+
+    <string name="mine">我的</string>
+
+    <string name="goods">好货</string>
+    <string name="activive">动态</string>
+    <string name="login_digest">0123456789</string>
+    <string name="pass_digest">1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+
+    <string name="vertify_code_digest">0123456789</string>
+    <string name="enter_username_login">请输入用户名</string>
+    <string name="enter_anxin_account_login">请输入安信账号</string>
+    <string name="enter_feed_back_title">请输入反馈标题</string>
+
+    <string name="enter_user_phone">请输入手机号</string>
+    <string name="enter_user_address">请输入地址</string>
+    <string name="enter_student_no">请输入学生编号</string>
+    <string name="enter_student">请输入学号</string>
+    <string name="enter_password_login">请输入密码</string>
+
+    <string name="has_andxin_bind">您已绑定安信账号</string>
+
+    <string name="has_ali_bind">您已绑定支付宝</string>
+
+
+    <string name="has_wx_bind_another">该微信已绑定其他账号</string>
+    <string name="has_ali_bind_another">该支付宝已绑定其他账号</string>
+    <string name="has_wx_bind">您已绑定微信</string>
+    <string name="wx_bind_success">微信绑定成功</string>
+    <string name="ali_bind_success">支付宝绑定成功</string>
+
+    <string name="enter_password_login_again">请再输入第一次</string>
+
+    <string name="not_same_pass">密码不一致</string>
+
+
+    <string name="modify_pass_success">密码修改成功</string>
+    <string name="enter_vertify_code">请输入验证码</string>
+
+
+    <string name="text_login">登录</string>
+
+    <string name="order_count">订单：</string>
+
+    <string name="sweep">扫一扫</string>
+    <string name="sweep_device_error">扫描器异常</string>
+
+    <string name="phone_code_sended">验证码已发送</string>
+
+    <string name="upload_fail">上传失败</string>
+    <string name="upload_success">上传成功</string>
+    <string name="pic_error">请重新选择</string>
+
+    <string name="select_pic">请选图片</string>
+    <string name="select_user_type">请选则用户类型</string>
+    <string name="tx_camera_text">相机</string>
+    <string name="tx_gallary">相册</string>
+    <string name="tx_cancel">取消</string>
+
+    <string name="null_pic_file">文件不存在</string>
+
+    <string name="modify_phone">修改号码</string>
+    <string name="modify_pass">修改密码</string>
+    <string name="balance">余额：</string>
+
+
+    <string name="i_want_join">我要参加</string>
+    <string name="recharge">充值：</string>
+    <string name="user_point">积分：</string>
+
+    <string name="to_know_detials">-----了解详情</string>
+
+    <string name="how_to_get_user_point">如何获取积分</string>
+
+    <string name="sure">确定</string>
+
+    <string name="setting">设置</string>
+
+    <string name="reply">回复</string>
+
+    <string name="user_point_time">积分时间</string>
+
+
+    <string name="my_advice">我的意见</string>
+    <string name="i_want_feedback">我要反馈</string>
+    <string name="your_advice">请留下您的宝贵意见</string>
+
+    <string name="enter_your_advice">请输入您的反馈意见</string>
+
+    <string name="enter_your_advice_title">请输入反馈标题</string>
+    <string name="thanks_for_your_advice">非常感谢您的意见，我们会做的更好</string>
+
+    <string name="thanks_for_your_join">恭喜您，成功参与本次活动</string>
+    <string name="sgin_in">签到</string>
+
+    <string name="sgin_in_success">签到成功</string>
+
+
+    <string name="recharge_list">充值明细</string>
+    <string name="consume_list">消费明细</string>
+
+
+    <string name="about_us">关于我们</string>
+
+
+    <string name="student">学生</string>
+    <string name="enterprise">企业</string>
+    <string name="housing_estate">小区</string>
+    <string name="other">其他</string>
+
+    <string name="tv_publish">发表</string>
+
+
+    <string name="click_to_change">（点击更换）</string>
+    <string name="anxin_account_bind">安信账号绑定</string>
+
+
+    <string name="you_have_joinde_this_active">您已经参加本活了</string>
+
+    <string name="transpond_success">转发成功</string>
+
+    <string name="has_join_in">已参加</string>
+    <string name="anxin_account_bind_success">安信账号绑定成功</string>
+    <string name="test_wenzi2">1.阿森纳于1886年由一群在东南伦敦伍尔维奇地区的戴尔广场（Dial Square）一家名为“皇家阿森纳”的武器制造所的工人所成立？球联盟将甲级联赛进行了扩军，经过投票表决，将阿森纳升入了甲级，自从那时候起，阿森纳一直保持在英格兰的顶级联赛中，成为了球联盟将甲级联赛进行了扩军，经过投票表决，将阿森纳升入了甲级，自从那时候起，阿森纳一直保持在英格兰的顶级联赛中，成为了</string>
+    <string name="test_wenzi1">1.阿森纳于1886年由一群在东南伦敦伍尔维奇地区的戴尔广场（Dial Square）一家名为“皇家阿森纳”的武器制造所的工人所成立？球联盟将甲级联赛进行了扩军，经过投票表决，将阿森纳升入了甲级，自从那时候起，阿森纳一直保持在英格兰的顶级联赛中，成为了球联盟将甲级联赛进</string>
+
+
+    <string name="twenzi">检查手机Wifi链接是否正常，由于微信网页版不能通过账号密码来登录，只能通过扫码登录</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

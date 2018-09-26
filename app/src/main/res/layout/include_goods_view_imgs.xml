@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+
+
+
+    <!--广告页-->
+    <!--banner 之前高度是160-->
+    <RelativeLayout
+        android:id="@+id/rl_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        >
+
+        <org.huaanwater.work.widget.viewpager.AutoScrollViewPager
+            android:id="@+id/vp_auto_banner_fix"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+
+        <org.huaanwater.work.widget.bottomSpot.PageIndexView
+            android:id="@+id/store_top_indexpage_fix"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

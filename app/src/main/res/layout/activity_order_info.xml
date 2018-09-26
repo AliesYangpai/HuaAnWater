@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/img_bg"
+android:orientation="vertical"
+tools:context="org.huaanwater.work.ui.activity.order.OrderInfoActivity">
+
+
+
+<!--title-->
+
+<include
+    android:id="@+id/include_title_balance"
+    layout="@layout/title_bar_has_all"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/include_title_balance"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_order_no"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="订单编号：EB554488796"
+            android:textColor="@color/black_text"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="订单日期：EB554488796"
+            android:textColor="@color/black_text"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="订单类型：EB554488796"
+            android:textColor="@color/black_text"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="订单金额：EB554488796"
+            android:textColor="@color/black_text"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="订单状态：等待放水"
+            android:textColor="@color/black_text"
+            android:gravity="center_vertical"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/ll_order"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_device_name"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="设备名称：华纳水机"
+            android:textColor="@color/black_text"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_device_no"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="设备编号：EB554488796"
+            android:textColor="@color/black_text"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/tv_device_imei"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="设备IMEI号：EB554488796"
+            android:textColor="@color/black_text"
+            android:gravity="center_vertical"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/ll_device"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_watering_time"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="放水时间"
+            android:textColor="@color/black_text"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_out_water_time"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="开水时间"
+            android:textColor="@color/black_text"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/tv_close_water_time"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="关水时间"
+            android:textColor="@color/black_text"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/tv_remark"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="订单备注：阿斯达所多"
+            android:textColor="@color/black_text"
+            android:gravity="center_vertical"
+            />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

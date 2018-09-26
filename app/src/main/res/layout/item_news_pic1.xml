@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        >
+
+         <TextView
+             android:id="@+id/tv_news_title1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="一分钟认识富氢水"
+             android:textSize="18sp"
+             android:gravity="center"
+             android:lines="1"
+             android:ellipsize="end"
+             android:textColor="@color/qhy_blue"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+             android:textStyle="bold"
+             />
+
+
+        <!--标题和描述-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+
+            >
+
+
+
+            <ImageView
+                android:id="@+id/iv_news_img1"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:src="@drawable/test_news"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_news_summary1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="a爱上了可爱丽丝看到阿斯达所多阿斯达所多接口路径阿萨德点击绿卡时间段阿斯达多卡记录啊"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:lines="3"
+                android:ellipsize="end"
+                android:textColor="@color/black_text"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/iv_news_img1"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+
+
+        <!--底部说明-->
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            >
+
+
+
+            <TextView
+                android:id="@+id/tv_create_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-11-25"
+                android:textColor="@color/text_login"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_commont_count1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评论15"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text_login"
+
+                />
+
+
+
+            <TextView
+                android:id="@+id/tv_like_count1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赞12"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text_login"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_all"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+
+</LinearLayout>

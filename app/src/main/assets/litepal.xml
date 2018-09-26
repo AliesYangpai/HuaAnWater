@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="HuaAnWater.db"></dbname>  <!--数据库名称-->
+
+    <version value="1"></version>  <!--数据库版本号-->
+
+
+
+    <list>
+        <mapping class="org.huaanwater.work.entity.User"></mapping>
+
+    </list>
+</litepal>
